@@ -2,7 +2,8 @@ import discord
 from discord.ext import tasks
 import requests
 
-TOKEN = "test"
+import os
+TOKEN = os.getenv("TOKEN")
 CHANNEL_ID = 1507319930524270714
 
 intents = discord.Intents.default()
